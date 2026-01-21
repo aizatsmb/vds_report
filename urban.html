@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Urban Growth Dashboard</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/topojson@3"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Global Urban Growth Dashboard</h1>
+
+  <div id="dashboard">
+    <div id="map"></div>   
+    <div id="bar">
+        <h3>Top cities with the highest urban growth rate</h3>
+    </div>
+    <div id="scatter">
+        <h3>Urban Growth Rate by Population and Region</h3>
+        <p>2024 city-level trends in population size and growth rate, colored by continent</p>
+    </div>
+    <div id="table">
+        <h3>Cities by Population and Growth Rate</h3>
+        <p>Explore urban trends across countries and continents</p>
+<br>
+        <div id="tableControls">
+            <input id="tableSearch" type="text" placeholder="Search city..." />
+            <button id="prevPage">Previous</button>
+            <span id="pageInfo"></span>
+            <button id="nextPage">Next</button>
+          </div>
+          <br>
+    </div>
+    
+  </div>
+
+  <script src="dashboard2.js"></script>
+</body>
+</html>
